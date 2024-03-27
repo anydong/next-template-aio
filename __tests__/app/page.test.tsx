@@ -1,5 +1,6 @@
 import Page from '@/app/page';
-import '@testing-library/jest-dom';
+
+import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';
 
 describe('Page', () => {
