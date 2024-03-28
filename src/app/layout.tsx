@@ -2,6 +2,7 @@ import { Providers } from '@/app/providers';
 import type { Metadata } from 'next';
 import { FC, ReactNode } from 'react';
 
+import '@radix-ui/themes/styles.css';
 import './globals.css';
 
 export const metadata: Metadata = {
