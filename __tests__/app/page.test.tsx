@@ -1,4 +1,4 @@
-import Page from '@/app/page';
+import Page from '@/app/[lng]/page';
 
 import { describe, expect, it } from '@jest/globals';
 import { render, screen } from '@testing-library/react';

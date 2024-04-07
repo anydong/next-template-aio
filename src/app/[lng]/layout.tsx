@@ -1,4 +1,4 @@
-import { Providers } from '@/app/providers';
+import { Providers } from '@/app/[lng]/providers';
 import type { Metadata } from 'next';
 import { FC, ReactNode } from 'react';
 

@@ -1,11 +1,19 @@
-import CopyCmdButton from '@/app/copy-cmd-button';
+import CopyCmdButton from '@/app/[lng]/copy-cmd-button';
 import Iconify from '@/components/ui/Iconify';
+import { useTranslation } from '@/i18n';
 import { Button, Code, Dialog, Flex } from '@radix-ui/themes';
 
-export default function Home() {
+type Props = {
+  params: {
+    lng: string;
+  };
+};
+export default async function Home({ params }: Props) {
+  const { t } = await useTranslation(params.lng);
   const createCmd = 'npx create-next-app@latest --example https://github.com/anydong/next-template-aio my-app-next';
   return (
     <main>
+      <h1>{t('h1')}</h1>
       <div className="flex h-screen items-center justify-center">
         <Dialog.Root>
           <Dialog.Trigger>
